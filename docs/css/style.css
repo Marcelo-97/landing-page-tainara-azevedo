@@ -946,3 +946,86 @@ img {
     font-size: 10rem;
   }
 }
+@media (max-width: 768px){
+  .badge-cta{
+    display:none !important;
+  }
+}
+@media (max-width:768px){
+
+  h1.display-md-4{
+    font-size: 2rem;
+  }
+
+  h2.display-5{
+    font-size: 1.8rem;
+  }
+
+  .font-1{
+    text-align:center;
+  }
+
+}
+@media (max-width:768px){
+  .section{
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+@media (max-width:768px){
+  .card{
+    margin-bottom:20px;
+  }
+}
+@media (max-width:768px){
+
+  /* empilha ícone + texto */
+  .d-flex.align-items-center{
+    flex-direction: column !important;
+    text-align:center;
+    gap:10px;
+  }
+
+  /* reduz tamanho dos ícones */
+  .rounded-circle{
+    width:50px !important;
+    height:50px !important;
+  }
+
+  /* reduz fonte do texto longo */
+  h5{
+    font-size:1rem !important;
+    word-break: break-word;
+  }
+
+  /* remove qualquer altura fixa */
+  .section,
+  .card{
+    height:auto !important;
+  }
+
+  /* evita sobreposição */
+  .position-absolute{
+    position:static !important;
+  }
+
+}
+.contact-item{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+@media(max-width:768px){
+  .contact-item{
+    flex-direction:column;
+    text-align:center;
+  }
+}
+.bg-rosa{
+  background:#d9bcbc; /* use a cor que você quiser */
+  border-radius:30px;
+  overflow:hidden;
+}
+
+
