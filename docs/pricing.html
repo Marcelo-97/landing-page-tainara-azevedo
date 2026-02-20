@@ -17,28 +17,18 @@
 
 <body>
   <!-- Header -->
-  <div class="top-bar py-3">
-    <div class="b-container">
-      <div class="d-flex justify-content-between align-items-center text-white px-3">
-       
-        <div class="social-box align-items-center">
-          <a href="https://www.facebook.com" class="fs-5 rounded-2" style="width: 30px; height: 30px;"><i
-              class="bi bi-facebook text-primary-color"></i></a>
-          <a href="https://x.com" class="fs-5 rounded-2" style="width: 30px; height: 30px;"><i
-              class="bi bi-twitter-x text-primary-color"></i></a>
-          <a href="https://www.linkedin.com" class="fs-5 rounded-2" style="width: 30px; height: 30px;"><i
-              class="bi bi-linkedin text-primary-color"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <header class="bg-white">
     <div class="b-container">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
         <div class="container-fluid">
-          <div class="logo-box">
-            <h4><strong>Tainara</strong> | Azevedo</h4>
+           <div class="logo">
+            
+              
+            <img src="image/logo tainara.png" alt="Tainara Azevedo" style="width: autopx; height: 100px;">
+              
+            
           </div>
           <button class="navbar-toggler bg-primary-color border-0" type="button" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
@@ -297,14 +287,24 @@
   <!-- #main end -->
 
   <!-- Footer -->
-   <footer class="footer py-5 px-4">
+    <footer class="footer py-5 px-4">
     <div class="footer-background"></div>
     <div class="b-container">
       <div class="row row-cols-1 pt-5 px-0">
         <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
-          <h4><strong>Tainara</strong> | Azevedo</h4>
-          <p class="my-4">Atendimento humanizado, sigiloso e baseado em evidências científicas. Reabilitação cognitiva
-            domiciliar e psicologia clínica online.
+          <div class="logo-box">
+            <div class="logo-box">
+             <div class="logo">
+            
+            <img src="image/logo tainara.png" alt="Tainara Azevedo" style="width: autopx; height: 120px; border-radius: 2px; box-shadow: 0 0 10px 0 rgba(0,0,0,0.1); transform: scale(1.4);">
+           
+              
+            
+          </div>
+          </div>
+          </div>
+          <p class="my-4">Cuidando da sua saúde mental com empatia, profissionalismo e acolhimento. Agende uma consulta
+            e dê o primeiro passo rumo ao seu bem-estar emocional.
           </p>
           <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
             <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
@@ -317,20 +317,48 @@
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <h4 class="text-secondary-color-2 mb-4">Contato</h4>
-          <p>Rio de Janeiro, RJ </p>
-          <p>contato@tainaraazevedo.com</p>
-          <p>(555) 123-4567</p>
+          <p>Rio de Janeiro, RJ, Brasil</p>
+          <p>Info@yourmail.com</p>
+          <p>(21)98682-4707</p>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
           <h4 class="text-secondary-color-2 mb-4">Links</h4>
           <ul class="d-flex flex-column p-0">
             <li class="mb-2"><a href="index.html" class="links-secondary">Página Inicial</a></li>
-            <li class="mb-2"><a href="services.html" class="links-secondary">Serviços</a></li>
+            <li class="mb-2"><a href="#" class="links-secondary">Serviços</a></li>
             <li class="mb-2"><a href="appointment.html" class="links-secondary">Agendamento</a></li>
-            
+
           </ul>
         </div>
-       
+        <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
+          <h4
+            class="font-1 fw-bolder text-secondary-color-2 mb-4 justify-content-md-start justify-content-center align-items-center mt-md-0 mt-sm-4">
+            Notícias</h4>
+          <p class="fw-bolder">Receba as últimas notícias e outras dicas.</p>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast success_msg_subscribe text-bg-light" role="alert" aria-live="assertive"
+              aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                  <i class="bi bi-check-circle-fill"></i> Sua inscrição foi realizada com sucesso!
+                </div>
+                <button type="button" class="btn me-2 m-auto" data-bs-dismiss="toast" aria-label="Close">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex flex-column w-100 gap-2 needs-validation" novalidate>
+            <input type="text" name="action" value="subscribe" hidden>
+            <input type="email" name="email" class="form-control form-control-lg rounded-5"
+              placeholder="Seu e-mail aqui" required>
+            <div class="invalid-feedback text-white">
+              Por favor, forneça um formato de e-mail válido (ex.:
+              user@example.com).
+            </div>
+            <button type="submit" class="btn btn-block btn-secondary-solid submit_subscribe">Se inscrever</button>
+          </form>
+        </div>
       </div>
       <div class="row justify-content-center py-4 mt-4 border-top">
         <p class="text-center w-100 mb-0">Copyright &copy; 2025 Widagdos. All Rights Reserved.</p>
