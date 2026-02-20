@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <title>Tainara | Azevedo</title>
+
+  <link rel="stylesheet" href="css/vendor/aos.css">
+
+  <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <!-- Header -->
+
+  <header class="bg-white">
+    <div class="b-container">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+          <div class="logo">
+            
+              
+            <img src="image/logo tainara.png" alt="Tainara Azevedo" style="width: autopx; height: 100px;">
+              
+            
+          </div>
+          <button class="navbar-toggler bg-primary-color border-0" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="bi bi-list text-white fs-2"></span>
+          </button>
+          <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="offcanvasNavbarLabel">
+
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto mb-2 mb-xl-0 gap-xl-4 justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Página Inicial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">Sobre mim</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Serviços
+                  </a>
+                  <ul class="dropdown-menu">
+
+
+                    <li><a class="dropdown-item" href="appointment.html">Agendamento</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Páginas
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="pricing.html">Preços</a></li>
+
+
+
+
+
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact-us.html">Contato</a>
+                </li>
+              </ul>
+              <div class="mt-lg-3">
+                <a href="contact-us.html" class="btn btn-quotes">
+                  <i class="bi bi-journal-bookmark-fill pe-2"></i>
+                  Fazer Orçamento</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- #navbar end -->
+    </div>
+  </header>
+  <!-- #header end -->
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="section hero-section d-flex align-items-center pb-0">
+      <div class="b-container px-3 px-sm-4 px-md-0">
+        <div class="row row-cols-1 row-cols-lg-2 g-4 align-items-center text-white">
+          <!-- Left Content -->
+          <div class="col mt-md-5 text-center text-lg-start d-flex flex-column align-items-center align-items-lg-start"
+            data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <h6 class="text-primary-color fw-semibold">ACOLHIMENTO • ÉTICA • CUIDADO HUMANIZADO</h6>
+            <h1 class="display-md-4 lh-sm font-1" style="font-weight: 900;">
+             <span class="text-primary-color">Saúde Mental </span> Ciência e Apoio
+            </h1>
+            <hr class="border border-white border-2 opacity-75 w-75 my-4 mx-auto mx-lg-0">
+            <p class="fs-5 my-4">
+              Psicóloga e Neuropsicóloga especializada em reabilitação cognitiva domiciliar para idosos e psicologia
+              clínica online. Atendimento humanizado, sigiloso e baseado em evidências científicas.
+            </p>
+            <div
+              class="d-flex gap-3 align-items-center my-4 flex-nowrap justify-content-lg-start justify-content-center">
+              <a href="appointment.html" role="button" class="btn btn-primary-solid">Agende seu check-up agora
+                mesmo.</a>
+
+            </div>
+          </div>
+          <!-- Video Overlay -->
+          <div id="videoOverlay" class="video-overlay d-none mt-0">
+            <button type="button" class="position-absolute top-0 end-0 m-3 text-white fs-2 border-0 bg-transparent"
+              onclick="hideVideoOverlay()" aria-label="Close">
+              <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe id="youtubeFrame" src="https://www.youtube.com/embed/N3Te3HeEFoA?si=YT6iTnj0qgbxYQ-H"
+                  title="YouTube video" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- #video end -->
+
+          <!-- Right Image -->
+          <div class="col position-relative text-center">
+            <img src="image/Gemini_Generated_Image_non5d5non5d5non5-removebg-preview.png" alt="Hero Talent"
+              class="img-fluid position-relative" style="z-index: 2; width: 100%; max-width: 480px;">
+            <!-- Badge Review -->
+            <div
+              class="badge-cta position-absolute top-50 start-0 translate-middle-y bg-secondary-color py-3 px-4 rounded-5 text-white text-center d-none d-md-block"
+              style="z-index: 3;">
+              <h3 class="mb-0 font-1 fw-bolder count-up" data-count="4.9" data-suffix=" /5">0</h3>
+              <p class="mb-0">Review no Google</p>
+            </div>
+            <!-- Badge Phone -->
+            <div
+              class="badge-cta position-absolute end-0 bg-primary-color py-3 px-4 rounded-5 d-flex align-items-center gap-3 justify-content-start"
+              style="z-index: 4; top: -80px;">
+              <div class=" d-flex align-items-center justify-content-center rounded-circle bg-white"
+                style="width: 60px; height: 60px;">
+                <i class=" bi bi-telephone-fill text-primary-color fs-2"></i>
+              </div>
+              <div class="justify-content-start">
+                <p class="mb-0">Ligue para mim a qualquer momento</p>
+                <h3 class="font-1 fw-bolder">(21) 98682-4707</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #hero end -->
+
+    <!-- Features Section -->
+    <section class="section py-5">
+      <div class="b-container">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+          <!-- Card 1 -->
+          <div class="col" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-secondary-color text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-secondary-color-2 rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-journal-text fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;">Atendimento<br>Domiciliar</h6>
+              </div>
+              <p class="mt-5">Reabilitação cognitiva especializada no conforto da sua casa, na Zona Sul do RJ.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-secondary-color-2 text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-secondary-color rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-people-fill fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;">Terapia<br>Online</h6>
+              </div>
+              <p class="mt-5">Psicologia clínica online com sigilo, acolhimento e flexibilidade para todo o Brasil.</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-primary-color text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-primary-color-2 rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-headset fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;">Estimulação<br>Cognitiva</h6>
+              </div>
+              <p class="mt-5">Treino de memória, atenção e funções executivas para idosos com base científica.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+            <div class="bg-primary-color-2 text-white p-4 rounded-5 h-100 transition-hover">
+              <div class="d-flex align-items-center gap-3 mb-3 justify-content-start">
+                <div class="d-flex align-items-center justify-content-center bg-primary-color rounded-circle"
+                  style="width: 50px; height: 50px;">
+                  <i class="bi bi-tools fs-4"></i>
+                </div>
+                <h6 class="fw-bold mb-2" style="font-size: large;">Orientação<br>Familiar</h6>
+              </div>
+              <p class="mt-5">Devolutiva e orientação para familiares e cuidadores sobre o tratamento do idoso.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- #features end -->
+
+    <!-- About Section -->
+    <section class=" section pb-5 my-5">
+      <div class="b-container">
+        <div
+          class="row row-cols-1 row-cols-xl-2 g-5 align-items-center justify-content-center text-center text-xl-start">
+          <!-- Left Content Side -->
+          <div class="col position-relative d-flex justify-content-center">
+            <div class="position-relative img-container px-0 px-lg-5">
+              <!-- Primary Image -->
+              <div class="ratio-wrapper-429">
+                <img src="image/sessao-de-psicologo-uma-mulher-de-meia-idade-em-terapia-com-uma-psicologa_361425-7413.avif" alt="About Us"
+                  class="w-100 h-100 object-position-center position-absolute top-0 start-0 rounded-5"
+                  data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+              </div>
+              <!-- Experience Label -->
+
+              <!-- Circle Image -->
+              <div class="position-absolute" style="top: -60px; left: 0; transform: translateX(-11%); z-index: 3;">
+
+              </div>
+            </div>
+          </div>
+          <!-- Right Content Side -->
+          <div class="col">
+            <h6 class="text-primary-color fw-semibold mb-2">Sobre Mim</h6>
+            <h2 class="font-1 mb-4" style="font-weight: 800;">Tainara Azevedo Psicóloga | Neuropsicóloga</h2>
+            <p class="text-secondary" style="font-size: large;">
+              Sou psicóloga e neuropsicóloga com foco em reabilitação cognitiva e psicologia clínica. Meu trabalho é
+              pautado em acolhimento, ética, cuidado humanizado, respeito à singularidade, embasamento científico e
+              promoção de autonomia e qualidade de vida.
+
+              Ofereço atendimento domiciliar especializado em idosos na Zona Sul do Rio de Janeiro e psicoterapia online
+              para adultos em todo o Brasil.
+            </p>
+
+            <div class="row d-flex flex-column flex-md-row my-4">
+              <div class="col d-flex justify-content-center justify-content-lg-start">
+                <ul class="list-unstyled font-1">
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1">Abordagem Sistêmica</h5>
+                  </li>
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1">Atendimento Humanizado</h5>
+                  </li>
+                </ul>
+              </div>
+              <div class="col d-flex justify-content-center justify-content-lg-start">
+                <ul class="list-unstyled font-1">
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1">Baseada em Evidências</h5>
+                  </li>
+                  <li class="d-flex align-items-start fw-bolder mb-2">
+                    <i class="bi bi-check-circle-fill text-primary-color fs-4 me-2"></i>
+                    <h5 class="fw-bolder py-1">Sigilo Profissional</h5>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="fst-italic fw-bold mb-4" style="font-size: large;">"Cuidar da saúde mental é um ato de coragem.
+              Estou aqui para caminhar ao seu lado nessa jornada de autoconhecimento e bem-estar."</p>
+
+            <div class="d-flex align-items-center justify-content-center justify-content-xl-start gap-3">
+
+              <a href="about-us.html" class="btn btn-primary-solid">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #about end -->
+
+    <!-- Consult Section -->
+    <section class="section py-5 text-white bg-gradient-secondary my-5">
+      <div class="b-container">
+        <div class="row justify-content-center text-center text-xl-start my-5">
+          <div class="col-12 col-xl-7">
+            <h6 class="text-primary-color fw-semibold mb-2">COMO FUNCIONA?</h6>
+            <h2 class="font-1 mb-4" style="font-weight: 800;">
+              Cuidando da sua <span class="text-primary-color">Saúde</span>,<br>
+              <span class="text-primary-color">Cuidando do seu</span> Bem-estar
+            </h2>
+          </div>
+          <div class="col-12 col-xl-5 mt-4 mt-md-0">
+            <p class="mb-4" style="font-size: large;">Um processo terapêutico estruturado e acolhedor, pensado para
+              atender suas necessidades com profissionalismo e empatia.
+              Agende Agora</p>
+            <a href="contact-us.html" class="btn btn-primary-solid">Agendar Consulta</a>
+          </div>
+        </div>
+
+        <hr class="border-white solid border-2 my-5">
+
+        <div class="row text-white mb-0 mb-xl-5 pt-5">
+          <div class="step-box col-12 col-lg-4" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1>01</h1>
+            <h3>Escuta &amp; Avaliação</h3>
+            <p>Realizo uma avaliação inicial detalhada para compreender suas necessidades, histórico e objetivos. Cada
+              pessoa é única e merece um olhar individualizado.</p>
+          </div>
+          <div class="step-box col-12 col-lg-4" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1>02</h1>
+            <h3>Plano Terapêutico</h3>
+            <p>Elaboro um plano terapêutico personalizado com metas claras, incluindo estimulação de memória, atenção e
+              funções executivas quando necessário.</p>
+          </div>
+          <div class="step-box col-12 col-lg-4" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500"
+            data-aos-duration="1000">
+            <h1>03</h1>
+            <h3>Acompanhamento</h3>
+            <p>Acompanhamento contínuo com devolutivas para pacientes e familiares, promovendo autonomia, qualidade de
+              vida e bem-estar emocional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #consult end -->
+
+    <!-- Services Section -->
+    <section class="section py-5">
+      <div class="b-container text-center">
+        <h6 class="text-primary-color fw-semibold mb-2">SERVIÇOS</h6>
+        <h2 class="display-5 font-1 mb-5" style="font-weight: 800;">Atendimento Especializado para Você</h2>
+        <div class="row g-4 my-5">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+              data-aos-easing="linear" data-aos-delay="250" data-aos-duration="1000">
+              <img src="image/happy-elderly-woman-her-daughter-browsing-tablet-computer.jpg" class="w-100"
+                style="height: 250px; transform: scale(1.5); object-position: center;" alt="Individual Therapy">
+              <div class="bg-accent-color-2 text-start p-4 position-relative">
+                <div class="position-absolute top-0 start-0 translate-middle-y"
+                  style="margin-top: 0; margin-left: 20px;">
+                  <img src="image/icon/Icon1.png" alt="" width="100">
+                </div>
+                <a href="service-detail.html"
+                  class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
+                  style="margin-top: -25px;">Saiba Mais</a>
+                <h3 class="font-1 mt-5" style="font-weight: 800;">Reabilitação Cognitiva Domiciliar</h3>
+                <hr class="border-primary border-1 opacity-100 w-100 my-4">
+                <p class="mb-3">Atendimento especializado em idosos com Alzheimer, demências, pós-AVC ou declínio
+                  cognitivo. Estimulação de memória, atenção e funções executivas no conforto do lar, na Zona Sul do RJ.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+              data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1000">
+              <img src="image/woman-using-laptop-having-video-call-with-her-doctor-while-sitting-home.jpg" class="w-100"
+                style="height: 250px; transform: scale(1.5); object-position: center;" alt="Group Counseling">
+              <div class="bg-accent-color-2 text-start p-4 position-relative">
+                <div class="position-absolute top-0 start-0 translate-middle-y"
+                  style="margin-top: 0; margin-left: 20px;">
+                  <img src="image/icon/Icon2.png" alt="" width="100">
+                </div>
+                <a href="service-detail.html"
+                  class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
+                  style="margin-top: -25px;">Saiba Mais</a>
+                <h3 class="font-1 mt-5" style="font-weight: 800;">Psicologia Clínica Online</h3>
+                <hr class="border-primary border-1 opacity-100 w-100 my-4">
+                <p class="mb-3">Psicoterapia online para adultos com ansiedade, depressão, dificuldades emocionais e
+                  relacionais. Atendimento sigiloso, humanizado e com abordagem sistêmica para todo o Brasil.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="col-12 col-xl-4">
+            <div class="card border-0 rounded-5 overflow-hidden h-100 shadow-sm scale-hover" data-aos="fade-up"
+              data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
+              <img src="image/person-conducting-online-psychologist-therapy.jpg" class="w-100"
+                style="height: 250px; transform: scale(1.5); object-position: center;" alt="Stress Management">
+              <div class="bg-accent-color-2 text-start p-4 position-relative">
+                <div class="position-absolute top-0 start-0 translate-middle-y"
+                  style="margin-top: 0; margin-left: 20px;">
+                  <img src="image/icon/Icon3.png" alt="" width="100">
+                </div>
+                <a href="service-detail.html"
+                  class="btn btn-dark btn-lg rounded-pill position-absolute top-0 end-0 me-3 fw-medium scale-hover"
+                  style="margin-top: -25px;">Saiba Mais</a>
+
+                <h3 class="font-1 mt-5" style="font-weight: 800;">Avaliação Neuropsicológica</h3>
+                <hr class="border-primary border-1 opacity-100 w-100 my-4">
+                <p class="mb-3">Avaliação completa das funções cognitivas com devolutiva detalhada e plano de
+                  intervenção personalizado. Orientação para familiares e cuidadores sobre o diagnóstico e tratamento.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #services end -->
+
+    <!-- Appointment Section -->
+    <section class="section py-5 text-white bg-gradient-secondary my-5">
+      <div class="b-container">
+        <div class="row align-items-center g-4 pt-5">
+          <!-- Left content -->
+          <div class="col-12 col-xl-5 order-1 order-md-3 order-xl-1 text-white mt-5 text-center text-xl-start">
+            <p class="text-uppercase text-primary-color fs-5 fw-semibold mb-2">POR QUE ME ESCOLHER?</p>
+            <h2 class="font-1 display-5 mb-4" style="font-weight: 800;">
+              <span class="text-primary-color">Meus </span> Diferenciais<br>
+
+            </h2>
+
+            <ul class="list-unstyled font-1 text-center text-xl-start">
+              <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <h5 class="fw-bolder py-1">Atendimento Domiciliar Especializado</h5>
+              </li>
+              <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <h5 class="fw-bolder py-1">Formação em Neuropsicologia</h5>
+              </li>
+              <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <h5 class="fw-bolder py-1">Avaliação Inicial + Plano com Metas</h5>
+              </li>
+              <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <h5 class="fw-bolder py-1">Estimulação de Funções Cognitivas</h5>
+              </li>
+              <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <h5 class="fw-bolder py-1">Devolutiva para Familiares</h5>
+              </li>
+              </li>
+              <li class="d-flex flex-row justify-content-center justify-content-xl-start mb-3">
+                <i class="bi bi-check-circle-fill text-primary-color fs-4 mb-2 mb-xl-0 me-2"></i>
+                <h5 class="fw-bolder py-1">Atendimento Online Sigiloso</h5>
+              </li>
+            </ul>
+            <a href="appointment.html" class="btn btn-primary-solid mb-5">Agende uma Consulta</a>
+          </div>
+
+          <!-- Middle content -->
+          <div class="col-12 col-md-7 col-xl-5 order-2 order-md-1">
+            <div class="ratio ratio-1x1">
+              <img src="image/portrait-beautiful-woman-with-book.jpg"
+                class="w-100 h-100 object-fit-cover position-absolute rounded-5" alt="Appointment" data-aos="fade-up"
+                data-aos-easing="linear" data-aos-delay="750" data-aos-duration="1000">
+            </div>
+          </div>
+          <!-- Right content -->
+          <div class="col-12 col-md-5 col-xl-2 d-flex flex-column gap-3 order-3 order-md-2 order-xl-3">
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
+              data-aos-delay="500" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-emoji-smile-fill accent-secondary-color"></i></div>
+                <div class="mb-0 fs-2 fw-bold">100%</div>
+                <p class="mb-0">Satisfação</p>
+              </div>
+            </div>
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
+              data-aos-delay="750" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-hand-thumbs-up-fill accent-secondary-color"></i></div>
+                <div class="mb-0 fs-2 fw-bold">257+</div>
+                <p class="mb-0">Clientes Satisfeitos</p>
+              </div>
+            </div>
+            <div class="card bg-gradient-primary rounded-4 border-0" data-aos="fade-left" data-aos-easing="linear"
+              data-aos-delay="1000" data-aos-duration="1000">
+              <div class="card-body text-center text-white p-3 font-1">
+                <div class="display-5"><i class="bi bi-person-plus-fill accent-secondary-color"></i></div>
+                <div class="mb-0 fs-2 fw-bold">10+</div>
+                <p class="mb-0">Anos de Experiência</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #appointment end -->
+
+    <!-- Feedback Section -->
+    <section class="section py-5 mt-5"
+      style="background: linear-gradient(to bottom,white 0%,white 60%,#F8DAE0 60%,#F7D9DF 100%)">
+      <div class="b-container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-lg-7 text-center text-lg-start">
+            <h6 class="text-primary-color fw-semibold mb-2">FEEDBACK DOS CLIENTES</h6>
+            <h2 class="font-1" style="font-weight: 800;">
+              O que os meus clientes dizem sobre mim
+            </h2>
+          </div>
+          <div class="col-12 col-lg-5 text-center text-lg-start mt-4 mt-md-0">
+            <p class="my-4 text-muted-color" style="font-size: large;">"A cura não tem pressa, tem companhia. Caminho ao
+              seu lado com apoio personalizado para reconstruir sua paz e confiança, dia após dia."</p>
+          </div>
+        </div>
+
+        <div class="swiper mySwiper mt-4">
+          <div class="swiper-wrapper">
+            <!-- Card 1 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold">"Aprendi a controlar minha ansiedade e
+                  sinto-me mais no controle da minha vida. Sou verdadeiramente grata pelo cuidado e orientação que me
+                  proporcionaram."</p>
+                <div class="d-flex align-items-center mt-2">
+
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color">Jessica M</h5>
+                    <p class="text-muted-color">Professora</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold">"As sessões de aconselhamento foram um verdadeiro game-changer para mim. A terapeuta
+                  foi tão compreensiva, e finalmente me senti ouvida. Recomendo fortemente os serviços deles a qualquer
+                  pessoa que esteja lutando."</p>
+                <div class="d-flex align-items-center mt-2">
+
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color">David L.</h5>
+                    <p class="text-muted-color">Gerente de Produto</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold">"Participei de um dos workshops de mindfulness deles, e isso me ajudou a encontrar
+                  uma sensação de calma que eu não sabia que podia alcançar. A abordagem deles é prática e fácil de
+                  seguir."</p>
+                <div class="d-flex align-items-center mt-2">
+
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color">Emily R.</h5>
+                    <p class="text-muted-color">Designer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="swiper-slide">
+              <div class="card feedback-card">
+                <div class="d-flex align-content-center mb-3">
+                  <div class="mb-2 text-warning">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+                <p class="fw-bold">"Desde a primeira sessão, eu sabia que estava no lugar certo. O atendimento
+                  personalizado e o apoio constante fizeram uma enorme diferença na minha jornada de cura."</p>
+                <div class="d-flex align-items-center mt-2">
+
+                  <div class="mt-4">
+                    <h5 class="font-1 fw-bold text-primary-color">Michael S.</h5>
+                    <p class="text-muted-color">Consultor de Saúde Mental</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #feedback end -->
+
+    <!-- Teams Section -->
+
+    <!-- #teams end -->
+
+    <!-- Quotes Section -->
+    <section class="quotes-section py-5">
+      <div class="quotes-background"></div>
+      <div class="container py-5 px-2 px-md-0">
+        <div class="row justify-content-center text-center text-white">
+          <div class="col-12 col-xl-10">
+            <h6 class="text-primary-color fw-semibold mb-2">ENTRE EM CONTATO</h6>
+            <h2 class="font-1 text-white" style="font-weight: 800;">
+              Dê o <span class="text-primary-color">primeiro passo</span> rumo ao seu <span
+                class="text-primary-color">bem-estar</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-xl-10">
+            <div class="card rounded-5 shadow-lg border-0 bg-secondary-gradient">
+              <div class="card-body p-4 p-lg-5">
+                <div class="row g-5 align-items-strench">
+                  <div class="col-lg-6 col-md-12 order-lg-1 order-2">
+                    <div
+                      class="success_msg toast align-items-center w-100 shadow-none mb-3 border border-success rounded-pill my-4"
+                      role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="d-flex p-2">
+                        <div class="toast-body d-flex flex-row gap-3 align-items-center text-success">
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                          Mensagem enviada com sucesso!
+                        </div>
+                        <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-success"
+                          data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </div>
+                    <div
+                      class="error_msg toast align-items-center w-100 shadow-none border-danger mb-3 my-4 border rounded-pill"
+                      role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="d-flex p-2">
+                        <div class="toast-body d-flex flex-row gap-3 align-items-center text-danger">
+                          <i class="bi bi-exclamation-triangle-fill text-danger"></i>
+                          Algo deu errado! Falha ao enviar o formulário.
+                        </div>
+                        <button type="button" class="me-2 m-auto bg-transparent border-0 ps-1 pe-0 text-danger"
+                          data-bs-dismiss="toast" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+                      </div>
+                    </div>
+                    <form class="needs-validation" data-aos="fade-up" data-aos-easing="linear" data-aos-delay="500"
+                      data-aos-duration="1000" novalidate>
+                      <div class="row g-3">
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="name" class="form-label font-1 fs-4 fw-bold">Nome</label>
+                          <input type="text" class="form-control form-control-lg rounded-5" id="name"
+                            placeholder="Seu nome aqui" name="name" required>
+                          <div class="invalid-feedback">
+                            Nome válido é obrigatório.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="email" class="form-label font-1 fs-4 fw-bold">Email</label>
+                          <input type="email" class="form-control form-control-lg rounded-5" id="email"
+                            placeholder="Seu email aqui" name="email" required>
+                          <div class="invalid-feedback">
+                            Email válido é obrigatório.
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="phone" class="form-label font-1 fs-4 fw-bold">Fone</label>
+                          <input type="number" class="form-control form-control-lg rounded-5" id="phone"
+                            placeholder="Seu número de telefone" name="phone" required>
+                          <div class="invalid-feedback">
+                            Número de telefone válido é obrigatório.
+                          </div>
+                        </div>
+
+
+                        <div class="col-lg-6 col-sm-12">
+                          <label for="subject" class="form-label font-1 fs-4 fw-bold">Assunto</label>
+                          <input type="text" class="form-control form-control-lg rounded-5" id="subject"
+                            placeholder="Seu assunto." name="subject" required>
+                          <div class="invalid-feedback">
+                            Assunto válido é obrigatório.
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <label for="message" class="form-label font-1 fs-4 fw-bold">Mensagem</label>
+                          <textarea class="form-control form-control-lg rounded-5" id="message" name="message" rows="5"
+                            placeholder="Conte-nos sua história"></textarea>
+                        </div>
+                        <button type="submit" style="width:400px; padding: 10px;"
+                          class="btn btn-sm btn-primary-solid submit_form mt-4">Enviar</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="col-lg-6 col-md-12 order-lg-2 order-1 mb-4 mb-lg-0">
+                    <div class="row mt-5">
+                      <h2 class="font-1" style="font-weight: 800;">
+                        Precisa de Ajuda? Fale Comigo
+                      </h2>
+                      <p class="mt-4 text-muted-color" style="font-size: large;">Cada passo em direção ao cuidado com a
+                        saúde mental é uma conquista. Estou aqui para te acompanhar nessa jornada com acolhimento e
+                        profissionalismo.</p>
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
+                      data-aos-easing="ease-out-cubic" data-aos-delay="250" data-aos-duration="1000">
+                      <div
+                        class="d-flex align-items-center justify-content-center rounded-circle border-white bg-primary-color"
+                        style="width: 65px; height: 65px; border: 2px solid white;">
+                        <i class="bi bi-telephone-fill fs-2 text-white"></i>
+                      </div>
+                      <div class="ms-2 font-1 py-2">
+                        <p class="fw-bold text-primary-color mb-0">WhatsApp</p>
+                        <h5 class="fw-bold">(21)98682-4707</h5>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 justify-content-start mt-3" data-aos="fade-left"
+                      data-aos-easing="ease-out-cubic" data-aos-delay="500" data-aos-duration="1000">
+                      <div
+                        class="d-flex align-items-center justify-content-center rounded-circle border-2 border-white bg-primary-color"
+                        style="width: 65px; height: 65px;border: 2px solid white;">
+                        <i class="bi bi-envelope-fill fs-2 text-white"></i>
+                      </div>
+                      <div class="ms-2 font-1 py-2">
+                        <p class="fw-bold text-primary-color mb-0">Email</p>
+                        <h5 class="fw-bold">contato@tainaraazevedo.com</h5>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center gap-3 justify-content-start" data-aos="fade-left"
+                      data-aos-easing="ease-out-cubic" data-aos-delay="750" data-aos-duration="1000">
+                      <div
+                        class="d-flex align-items-center justify-content-center rounded-circle border-2 border-white bg-primary-color"
+                        style="width: 65px; height: 65px;border: 2px solid white;">
+                        <i class="bi bi-geo-alt-fill fs-2 text-white"></i>
+                      </div>
+                      <div class="ms-2 font-1 py-2">
+                        <p class="fw-bold text-primary-color mb-0">Nossa Localização</p>
+                        <h5 class="fw-bold">Rio de Janeiro, RJ <br>Rio de Janeiro</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- #quotes end -->
+
+    <!-- News Section -->
+
+    <!-- #news end -->
+
+  </main>
+  <!-- #main end -->
+
+  <!-- Footer -->
+  <footer class="footer py-5 px-4">
+    <div class="footer-background"></div>
+    <div class="b-container">
+      <div class="row row-cols-1 pt-5 px-0">
+        <div class="footer-logo col-12 col-lg-3 mb-5 text-lg-start text-center">
+          <div class="logo-box">
+             <div class="logo">
+            
+            <img src="image/logo tainara.png" alt="Tainara Azevedo" style="width: autopx; height: 120px; border-radius: 2px; box-shadow: 0 0 10px 0 rgba(0,0,0,0.1); transform: scale(1.4);">
+           
+              
+            
+          </div>
+          </div>
+          <p class="my-4">Cuidando da sua saúde mental com empatia, profissionalismo e acolhimento. Agende uma consulta
+            e dê o primeiro passo rumo ao seu bem-estar emocional.
+          </p>
+          <div class="social-box d-flex justify-content-lg-start justify-content-center w-100">
+            <a href="https://www.facebook.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-facebook text-white"></i></a>
+            <a href="https://x.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-twitter-x text-white"></i></a>
+            <a href="https://www.linkedin.com" class="rounded-5 py-2" style="width: 40px; height: 40px;"><i
+                class="bi bi-linkedin text-white"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4">Contato</h4>
+          <p>Rio de Janeiro, RJ, Brasil</p>
+          <p>Info@yourmail.com</p>
+          <p>(21)98682-4707</p>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+          <h4 class="text-secondary-color-2 mb-4">Links</h4>
+          <ul class="d-flex flex-column p-0">
+            <li class="mb-2"><a href="index.html" class="links-secondary">Página Inicial</a></li>
+            <li class="mb-2"><a href="#" class="links-secondary">Serviços</a></li>
+            <li class="mb-2"><a href="appointment.html" class="links-secondary">Agendamento</a></li>
+
+          </ul>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 mb-3 text-md-start text-center">
+          <h4
+            class="font-1 fw-bolder text-secondary-color-2 mb-4 justify-content-md-start justify-content-center align-items-center mt-md-0 mt-sm-4">
+            Notícias</h4>
+          <p class="fw-bolder">Receba as últimas notícias e outras dicas.</p>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast success_msg_subscribe text-bg-light" role="alert" aria-live="assertive"
+              aria-atomic="true">
+              <div class="d-flex">
+                <div class="toast-body">
+                  <i class="bi bi-check-circle-fill"></i> Sua inscrição foi realizada com sucesso!
+                </div>
+                <button type="button" class="btn me-2 m-auto" data-bs-dismiss="toast" aria-label="Close">
+                  <i class="bi bi-x-lg"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex flex-column w-100 gap-2 needs-validation" novalidate>
+            <input type="text" name="action" value="subscribe" hidden>
+            <input type="email" name="email" class="form-control form-control-lg rounded-5"
+              placeholder="Seu e-mail aqui" required>
+            <div class="invalid-feedback text-white">
+              Por favor, forneça um formato de e-mail válido (ex.:
+              user@example.com).
+            </div>
+            <button type="submit" class="btn btn-block btn-secondary-solid submit_subscribe">Se inscrever</button>
+          </form>
+        </div>
+      </div>
+      <div class="row justify-content-center py-4 mt-4 border-top">
+        <p class="text-center w-100 mb-0">Copyright &copy; 2025 Widagdos. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer end -->
+
+  <!-- Scripts -->
+  <!-- jQuery -->
+  <script src="js/vendor/jquery.min.js"></script>
+  <!-- Animation On Scroll (AOS) -->
+  <script src="js/vendor/aos.js"></script>
+  <!-- Swiper JS -->
+  <script src="js/vendor/swiper-bundle.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="js/vendor/bootstrap.bundle.min.js"></script>
+  <!-- JS Script -->
+  <script src="js/submit-form.js"></script>
+  <script src="js/script-swiper.js"></script>
+  <script src="js/script-counter.js"></script>
+  <script src="js/video-player.js"></script>
+  <script src="js/script.js"></script>
+  <!-- #scripts end -->
+</body>
+
+</html>
